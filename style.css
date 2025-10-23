@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #0d1117;
+  background-color: #161b22;
   font-family: sans-serif;
 }
 
@@ -69,6 +69,7 @@ html, body {
   margin-right: 2px;
 }
 
+
 #reklamaImg,
 #reklamaImg2 {
   width: 209px;
@@ -119,7 +120,9 @@ footer {
   height: 28px;
   background: #161b22;
 }
-
+.category a, .swap {
+  transition: all 0.3s ease;
+}
 .category a {
   border: 1px solid #30363d;
   padding: 4px;
@@ -127,9 +130,12 @@ footer {
   color: #c9d1d9;
 }
 
-.category a:hover {
-  color: #58a6ff;
-  text-decoration: underline;
+.category a:hover, .swap:hover {
+  background: linear-gradient(90deg, #58a6ff, #1f6feb);
+  color: white;
+  transform: scale(1.05);
+    text-decoration: underline;
+
 }
 
 .recipe {
@@ -158,6 +164,21 @@ footer {
   color: #c9d1d9;
 }
 
+h1, h2 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+h1 { animation-delay: 0.2s; }
+h2 { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 h1 {
   text-align: center;
   font-size: 25px;
@@ -270,7 +291,6 @@ button:active {
 
   #reklamaImg,
   #reklamaImg2 {
-    width: 100%;
     height: auto;
     max-height: 200px;
     object-fit: cover;
