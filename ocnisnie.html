@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-header">
+        <div class="header">
+        <img id="mainImg" src="white.png" alt="Ночная картинка">
+            <div class="header-icons">
+                <a href="https://t.me/yami_kura">
+                <img id="tg" src="tg-white.svg" alt="">
+                </a>
+                <a href="https://vk.com/id/rarnoiti">
+                <img id="vk" src="vk-white.svg" alt="">
+                </a>
+                <a href="">
+                <img id="donate" src="donate-white.svg" alt="">
+                </a>
+                <a href="https://t.me/yami_kura">
+                <img id="support" src="" alt="">
+                </a>
+                <button id="themeBtn" class="theme-toggle" aria-pressed="false" title="Переключить тему">
+    <img id="icon" src="moon.svg" alt="">
+  </button>
+                <input id="inputS"></input>
+            </div>
+        </div>
+    </div>
+    <div class="container-body">
+        <div class="category">
+            <a href="zavtrak.html">Завтраки</a>
+            <a href="obed.html">Обед</a>
+            <a href="zakuski.html">Закуски</a>
+            <a href="napitki.html">Напитки</a>
+            <div class="return">
+            <a href="index.html">Главная страница</a>
+        </div>
+        </div>
+        <div class="body">
+        <div class="left-side">
+            <h1>Основные блюда</h1>
+    <ul class="menu-item">
+      <li><button class="swap" onclick="showRecipe(1)">Котлеты</button></a></li>
+      <li><button class="swap" onclick="showRecipe(2)">Шашлык</button></li>
+      <li><button class="swap" onclick="showRecipe(3)">Пюре</button></li>
+      <li><button class="swap" onclick="showRecipe(4)">Стейки</button></li>
+      <li><button class="swap" onclick="showRecipe(5)">Плов</button></li>
+    </ul>
+        </div>
+        <div class="center-side">
+<div class="center-side">
+            <div id="recipe1" class="recipe active">
+    <h2>Рецепт 1: Котлеты</h2>
+    <img class="food" src="images/kotleti.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>495</p><p>ккал</p></div>
+        <div><p>Белки</p><p>26</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>19</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>52</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Репчатый лук</span>
+  <span class="dots"></span>
+  <span class="amount">1 головка</span>
+</div>
+<div class="ingredient">
+  <span class="name">Мясной фарш</span>
+  <span class="dots"></span>
+  <span class="amount">350 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Молотый перец чили</span>
+  <span class="dots"></span>
+  <span class="amount">щепотка</span>
+</div>
+ <div class="ingredient">
+  <span class="name">Соль</span>
+  <span class="dots"></span>
+  <span class="amount">по вкусу</span>
+</div>
+ <div class="ingredient">
+  <span class="name">Мука грубого помола</span>
+  <span class="dots"></span>
+  <span class="amount">350 г</span>
+</div>
+ <div class="ingredient">
+  <span class="name">Вода</span>
+  <span class="dots"></span>
+  <span class="amount">150 мл</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Смешайте нарезанный лук с мясным фаршем, щепоткой чили, солью и мукой. Не спеша влейте воду и хорошо перемешайте. Затем разделите на кусочки размером с куриное яйцо.</p>
+    <p>2 Тонко раскатайте каждый кусок и жарьте в масле до золотой корочки. Обсушите от масла и подавайте с зеленым салатом.</p>
+  </div>
+  <div id="recipe2" class="recipe">
+    <h2>Рецепт 2: Шашлык из говядины</h2>
+    <img class="food" src="images/shashlik.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>696</p><p>ккал</p></div>
+        <div><p>Белки</p><p>49</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>54</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>6</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Говядина</span>
+  <span class="dots"></span>
+  <span class="amount">1 кг</span>
+</div>
+<div class="ingredient">
+  <span class="name">Лук</span>
+  <span class="dots"></span>
+  <span class="amount">200 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Курдючное сало</span>
+  <span class="dots"></span>
+  <span class="amount">100 г</span>
+</div>
+ <div class="ingredient">
+  <span class="name">Молотый кориандр</span>
+  <span class="dots"></span>
+  <span class="amount">1 столовая ложка</span>
+</div>
+ <div class="ingredient">
+  <span class="name">Кумин(зира)</span>
+  <span class="dots"></span>
+  <span class="amount">1 чайная ложка</span>
+</div>
+ <div class="ingredient">
+  <span class="name">Соль</span>
+  <span class="dots"></span>
+  <span class="amount">1 чайная ложка</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Очистить мясо от всех прожилок и пленок. Нарезать на кубики со стороной около трех сантиметров.</p>
+    <p>2 Нарезать лук четвертинками кольца — достаточно толсто, около пяти миллиметров, чтобы потом легко было его стряхнуть с мяса (на огне он будет гореть, а этот запах горелого лука мясу ни к чему). Сложить лук в большую миску.</p>
+    <p>3 Растереть в ступке соль, кориандр и зиру. Добавить специи к луку и хорошо размять руками — важно это сделать до того, как добавлять мясо, чтобы специи не прилипли к нему ком­ками. Затем добавить говядину, перемешать и оставить мариноваться минимум на час.</p>
+    <p>4 Курдюк нарезать тонкими ломтиками длиной и шириной около двух-трех сантиметров.</p>
+    <p>5 Замаринованное мясо обобрать от лука и нанизать на шампуры, чередуя с курдюком. Нанизывать плотно, сжимая и разравнивая на шампуре.</p>
+    <p>6 Жарить на мангале до красно-коричневой корочки.</p>
+  </div>
+
+  <div id="recipe3" class="recipe">
+    <h2>Рецепт 3: Пюре</h2>
+    <img class="food" src="images/pire.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>249</p><p>ккал</p></div>
+        <div><p>Белки</p><p>5</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>9</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>38</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Соль</span>
+  <span class="dots"></span>
+  <span class="amount">по вкусу</span>
+</div>
+<div class="ingredient">
+  <span class="name">Молоко</span>
+  <span class="dots"></span>
+  <span class="amount">250 мл</span>
+</div>
+<div class="ingredient">
+  <span class="name">Сливочное масло</span>
+  <span class="dots"></span>
+  <span class="amount">50 г</span>
+</div>
+ <div class="ingredient">
+  <span class="name">Картофель</span>
+  <span class="dots"></span>
+  <span class="amount">2 кг</span>
+</div>
+
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Очистите картошку, порежьте на большие куски, положите в кастрюлю, добавьте холодной воды и чайную ложку соли. Вода должна покрывать весь картофель. Доведите до кипения, потом убавьте огонь и варите 20-30 минут, пока картошка не станет мягкой. Слейте воду.</p>
+    <p>2 Растопите масло в другой кастрюле на медленном огне, добавьте картошку и разомните ее – лопаткой или специальным приспособлением. Когда масло полностью впитается, медленно вливайте горячее молоко, все время помешивая смесь деревянной лопаткой. Попробуйте, посолите, если нужно.</p>
+    <p>3 Подавайте сразу – или сохраняйте теплым.</p>
+  </div>
+
+  <div id="recipe4" class="recipe">
+    <h2>Рецепт 4: Стейки в вином соусе</h2>
+    <img class="food" src="images/steik.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>277</p><p>ккал</p></div>
+        <div><p>Белки</p><p>24</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>18</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>0</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Говяжый стейк</span>
+  <span class="dots"></span>
+  <span class="amount">133 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Крупная соль</span>
+  <span class="dots"></span>
+  <span class="amount">по вкусу</span>
+</div>
+<div class="ingredient">
+  <span class="name">Молотый черный перец</span>
+  <span class="dots"></span>
+  <span class="amount">по вкусу</span>
+</div>
+ <div class="ingredient">
+  <span class="name">Красное сухое вино</span>
+  <span class="dots"></span>
+  <span class="amount">1/4 стакан</span>
+</div>
+ <div class="ingredient">
+  <span class="name">Сливочное масло</span>
+  <span class="dots"></span>
+  <span class="amount">8 г</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Разогреть большую чугунную сковороду или гриль на большом огне. Приправить стейки солью и перцем.</p>
+    <p>2 Обжарить с каждой стороны не меньше 3 минут, в зависимости от степени прожарки, которую вы предпочитаете. Выложить стейки на тарелку и прикрыть фольгой.</p>
+    <p>3 В ту же сковороду влить вино и тушить на среднем огне, периодически помешивая и очищая стенки сковороды деревянной ложкой, пока вино не слегка загустеет, от 4 до 6 минут.</p>
+    <p>4 Нарезать масло кубиками.</p>
+    <p>5 Убрать сковороду с огня и, постоянно помешивая, добавлять кубики масла, не добавляя следующий, пока не растворится предыдущий. Приправить солью и перцем.</p>
+    <p>6 Подавать стейки с соусом.</p>
+  </div>
+
+  <div id="recipe5" class="recipe">
+    <h2>Рецепт 5: Плов с курицей</h2>
+    <img class="food" src="images/plov.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>852</p><p>ккал</p></div>
+        <div><p>Белки</p><p>34</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>64</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>35</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Курица</span>
+  <span class="dots"></span>
+  <span class="amount">штука</span>
+</div>
+<div class="ingredient">
+  <span class="name">Репчатый лук</span>
+  <span class="dots"></span>
+  <span class="amount">головка</span>
+</div>
+<div class="ingredient">
+  <span class="name">Морковь</span>
+  <span class="dots"></span>
+  <span class="amount">75 г</span>
+</div>
+ <div class="ingredient">
+  <span class="name">Рис басмати</span>
+  <span class="dots"></span>
+  <span class="amount">38 г</span>
+</div>
+ <div class="ingredient">
+  <span class="name">Чеснок</span>
+  <span class="dots"></span>
+  <span class="amount">головка</span>
+</div>
+<div class="ingredient">
+  <span class="name">Кумин(зира)</span>
+  <span class="dots"></span>
+  <span class="amount">чайная ложка</span>
+</div>
+<div class="ingredient">
+  <span class="name">Барбарис</span>
+  <span class="dots"></span>
+  <span class="amount">чайная ложка</span>
+</div>
+<div class="ingredient">
+  <span class="name">Растительное масло</span>
+  <span class="dots"></span>
+  <span class="amount">38 мл</span>
+</div>
+<div class="ingredient">
+  <span class="name">Соль</span>
+  <span class="dots"></span>
+  <span class="amount">по вкусу</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Подготовить все ингредиенты.</p>
+    <p>2 Разделать курицу на бедра, голени, крылышки и грудки, грудки разрезать на крупные куски.</p>
+    <p>3 В казане хорошо разогреть растительное масло и обжарить куриное мясо до золотистого цвета. Лучше обжаривать мясо частями, иначе курица будет не жариться, а тушиться. Выложить жареную курицу на чистое блюдо.</p>
+    <p>4 Нарезать лук и морковь соломкой.</p>
+    <p>5 Обжарить лук до прозрачности, затем добавить морковь, обжаривать еще 2–3 минуты.</p>
+    <p>6 Вернуть в казан курицу, добавить головку чеснока, специи и соль, влить 1 литр горячей воды и тушить на небольшом огне 40 минут, накрыв крышкой.</p>
+    <p>7 Рис тщательно промыть под проточной водой. Затем обжарить его на сухой сковороде, на небольшом огне, постоянно помешивая. Это займет 7–10 мнут.</p>
+    <p>8 Затем переложить рис в казан, накрыть крышкой и оставить на 30 минут.</p>
+    <p>9 Спустя 30 минут можно немного перемешать рис и проверить его готовность. Если рис еще не готов, а вода уже выпарилась, нужно сделать в плове несколько отверстий, влить в них около половины стакана воды и подержать под крышкой еще 5–10 минут.</p>
+    <p>10 Подавать плов с курицей горячим.</p>
+  </div>
+        </div>
+        </div>
+        <div class="right-side">
+                <img id="reklamaImg2" src="sddefault.jpg" alt="">
+        </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+        <div class="information">
+        <p><a href="https://t.me/yami_kura">Telegram</a></p>
+        <p><a href="https://vk.com/id/rarnoiti">VK</a></p>
+        </div>
+        <div class="contact">
+            <p>Contacts: dmerkylov@inbox.ru</p>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Даниил Меркулов, index.html, 2025. Все права защищены.</p>
+        </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    function showRecipe(num) {
+      let recipes = document.querySelectorAll(".recipe");
+      recipes.forEach(r => r.classList.remove("active"));
+      document.getElementById("recipe" + num).classList.add("active");
+    }
+  </script>
+  <script src="search.js"></script>
+</body>
+</html>

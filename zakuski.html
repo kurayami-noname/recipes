@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-header">
+        <div class="header">
+        <img id="mainImg" src="white.png" alt="Ночная картинка">
+            <div class="header-icons">
+                <a href="https://t.me/yami_kura">
+                <img id="tg" src="tg-white.svg" alt="">
+                </a>
+                <a href="https://vk.com/id/rarnoiti">
+                <img id="vk" src="vk-white.svg" alt="">
+                </a>
+                <a href="">
+                <img id="donate" src="donate-white.svg" alt="">
+                </a>
+                <a href="https://t.me/yami_kura">
+                <img id="support" src="" alt="">
+                </a>
+                <button id="themeBtn" class="theme-toggle" aria-pressed="false" title="Переключить тему">
+    <img id="icon" src="moon.svg" alt="">
+  </button>
+                <input id="inputS"></input>
+            </div>
+        </div>
+    </div>
+    <div class="container-body">
+        <div class="category">
+            <a href="zavtrak.html">Завтраки</a>
+            <a href="obed.html">Обед</a>
+            <a href="napitki.html">Напитки</a>
+            <a href="ocnisnie.html">Основные блюда</a>
+            <div class="return">
+            <a href="index.html">Главная страница</a>
+        </div>
+        </div>
+        <div class="body">
+        <div class="left-side">
+             <h1>Закуски</h1>
+    <ul class="menu-item">
+      <li><button class="swap" onclick="showRecipe(1)">Рулет из лаваша</button></a></li>
+      <li><button class="swap" onclick="showRecipe(2)">Чипсы</button></li>
+      <li><button class="swap" onclick="showRecipe(3)">Холодец</button></li>
+      <li><button class="swap" onclick="showRecipe(4)">Помидоры с сыром</button></li>
+      <li><button class="swap" onclick="showRecipe(5)">Яйца на пасху</button></li>
+    </ul>
+        </div>
+        <div class="center-side">
+             <div id="recipe1" class="recipe active">
+            <h2>Рецепт 1: Рулет из лаваша</h2>
+    <img class="food" src="images/lavash.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>316</p><p>ккал</p></div>
+        <div><p>Белки</p><p>12</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>23</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>15</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Куриное яйцо</span>
+  <span class="dots"></span>
+  <span class="amount">3 штуки</span>
+</div>
+<div class="ingredient">
+  <span class="name">Крабовые палочки</span>
+  <span class="dots"></span>
+  <span class="amount">400 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Твердный сыр</span>
+  <span class="dots"></span>
+  <span class="amount">100 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Сливочный сыр</span>
+  <span class="dots"></span>
+  <span class="amount">150 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Майонез</span>
+  <span class="dots"></span>
+  <span class="amount">150 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Укроп</span>
+  <span class="dots"></span>
+  <span class="amount">40 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Тонкий лаваш</span>
+  <span class="dots"></span>
+  <span class="amount">2 штуки</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Положить яйца в кипящую воду и варить 11 минут.</p>
+    <p>2 Охладить готовые яйца, очистить и натереть на крупной терке.</p>
+    <p>3 Также на крупной терке натереть крабовые палочки и твердый сыр.</p>
+    <p>4 Укроп измельчить.</p>
+    <p>5 Смешать майонез со сливочным сыром.</p>
+    <p>6 Смазать этой смесью лаваш.</p>
+    <p>7 Равномерно распределить по лавашу все подготовленные ингредиенты и плотно свернуть его в рулет.</p>
+    <p>8 Завернуть рулет в пищевую пленку и убрать в холодильник минимум на 1 час, а лучше на ночь.</p>
+    <p>9 Готовый рулет нарезать кусочками толщиной около 1 см и выложить на блюдо.</p>
+    </div>
+      <div id="recipe2" class="recipe">
+<h2>Рецепт 2: Чипсы</h2>
+    <img class="food" src="images/chipsi.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>808</p><p>ккал</p></div>
+        <div><p>Белки</p><p>3</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>76</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>30</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Соль</span>
+  <span class="dots"></span>
+  <span class="amount">по вкусу</span>
+</div>
+<div class="ingredient">
+  <span class="name">Подсолнечное масло</span>
+  <span class="dots"></span>
+  <span class="amount">450 мл</span>
+</div>
+<div class="ingredient">
+  <span class="name">Картофель</span>
+  <span class="dots"></span>
+  <span class="amount">1 кг</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Очистите и порежьте картофель на тонкие кружки. Лучше брать желтый картофель. Промойте его и оставьте в холодной воде на 30 минут. Потом обсушите.</p>
+    <p>2 Выложите картофельные кружки на полотенце, посолите и перемешайте. Разогрейте масло на глубокой сковороде до 150 градусов. Отправляйте картофель жариться партиями, так, чтобы кружкам было довольно место, и готовьте, пока они не станут золотисто-коричневыми. Вынимайте шумовкой, откладывайте на тарелку, покрытую бумажным полотенцем. И отправляйте на сковороду следующую партию.</p>
+    <p>3 Когда вся картошка будет таким образом приготовлена, разогрейте масло до 180 градусов, снова жарьте картошку частями, чтобы она стала хрустящей. Присыпьте солью и сразу подавайте.</p>
+       </div>
+      <div id="recipe3" class="recipe">
+<h2>Рецепт 3: Холодец   </h2>
+    <img class="food" src="images/holodec.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>958</p><p>ккал</p></div>
+        <div><p>Белки</p><p>91</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>62</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>10</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Свиная нога</span>
+  <span class="dots"></span>
+  <span class="amount">1/2 кг</span>
+</div>
+<div class="ingredient">
+  <span class="name">Говядина</span>
+  <span class="dots"></span>
+  <span class="amount">1 кг</span>
+</div>
+<div class="ingredient">
+  <span class="name">Бедро индейки</span>
+  <span class="dots"></span>
+  <span class="amount">1/2 кг</span>
+</div>
+<div class="ingredient">
+  <span class="name">Чеснок</span>
+  <span class="dots"></span>
+  <span class="amount">3 зубчика</span>
+</div>
+<div class="ingredient">
+  <span class="name">Репчатый лук</span>
+  <span class="dots"></span>
+  <span class="amount">2 головки</span>
+</div>
+<div class="ingredient">
+  <span class="name">Лавровый лист</span>
+  <span class="dots"></span>
+  <span class="amount">5 шт</span>
+</div>
+<div class="ingredient">
+  <span class="name">Черный перец горошком</span>
+  <span class="dots"></span>
+  <span class="amount">10 штук</span>
+</div>
+<div class="ingredient">
+  <span class="name">Соль</span>
+  <span class="dots"></span>
+  <span class="amount">по вкусу</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Свиную ногу, говядину и бедро индейки положить в кастрюлю и залить водой около 5 литров. Поставить на огонь, довести до кипения, снять пену. Посолить, добавить лук. Варить на малом огне в течение 7 часов. К концу варки добавить лавровый лист и перец.</p>
+    <p>2 После варки отделить мясо от костей и нарезать мелкими кусками. Мясо перемешать и разложить по формам слоем 2 см. Залить формы оставшимся бульоном и добавить мелко нарезанный чеснок.</p>
+    <p>3 Поставить в холодильник на несколько часов до застывания. Подавать с хреном.</p>
+</div>
+ <div id="recipe4" class="recipe">
+<h2>Рецепт 4: Помидоры с сыром</h2>
+    <img class="food" src="images/pomidori.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>149</p><p>ккал</p></div>
+        <div><p>Белки</p><p>6</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>13</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>3</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Помидоры</span>
+  <span class="dots"></span>
+  <span class="amount">3 штуки</span>
+</div>
+<div class="ingredient">
+  <span class="name">Твердый сыр</span>
+  <span class="dots"></span>
+  <span class="amount">100 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Майонез</span>
+  <span class="dots"></span>
+  <span class="amount">3 столовых ложки</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Помидоры вымыть, обсушить и нарезать кружками. Разложить на блюде, слегка посолить и поперчить.</p>
+    <p>2 Смазать помидоры майонезом, сверху посыпать тертым сыром.</p>
+    <p>3 Запечь в микроволновке 15 секунд, чтобы сыр немного расплавился. По желанию можно посыпать зеленью.</p>
+</div>
+ <div id="recipe5" class="recipe">
+<h2>Рецепт 5: Яйца на пасху   </h2>
+    <img class="food" src="images/pasxa.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>105</p><p>ккал</p></div>
+        <div><p>Белки</p><p>8</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>7</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>1</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Куриное яйцо</span>
+  <span class="dots"></span>
+  <span class="amount">6 штуки</span>
+</div>
+<div class="ingredient">
+  <span class="name">Сода</span>
+  <span class="dots"></span>
+  <span class="amount">60 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Уксус 9%-ный</span>
+  <span class="dots"></span>
+  <span class="amount">200 мл</span>
+</div>
+<div class="ingredient">
+  <span class="name">Розовый пищевой краситель</span>
+  <span class="dots"></span>
+  <span class="amount">по вкусу </span>
+</div>
+<div class="ingredient">
+  <span class="name">Синий пищевой краситель</span>
+  <span class="dots"></span>
+  <span class="amount">по вкусу</span>
+</div>
+<div class="ingredient">
+  <span class="name">Растительное масло</span>
+  <span class="dots"></span>
+  <span class="amount">по вкусу</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Подготовить все ингредиенты.</p>
+    <p>2 Отварить яйца вкрутую. Готовые яйца охладить под струей воды, а затем обсушить полотенцем.</p>
+    <p>3 Распределить соду по двум мискам.</p>
+    <p>4 Добавить краситель и воду. В итоге должна получиться густая паста.</p>
+    <p>5 Нанести смесь на яйца в произвольном порядке.</p>
+    <p>6 Оставить до полного высыхания соды, примерно на 15–20 минут.</p>
+    <p>7 Добавить к каждому яйцу по 1–2 столовые ложки уксуса.</p>
+    <p>8 Аккуратно ополоснуть яйца проточной водой и промокнуть полотенцем так, чтобы не снять цветной слой.</p>
+    <p>9 Слегка натереть яйца растительным маслом с помощью ватного диска.</p>
+    <p>10 Светлой Пасхи!</p>
+</div>
+</div>
+        <div class="right-side">
+                <img id="reklamaImg2" src="sddefault.jpg" alt="">
+        </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+        <div class="information">
+        <p><a href="https://t.me/yami_kura">Telegram</a></p>
+        <p><a href="https://vk.com/id/rarnoiti">VK</a></p>
+        </div>
+        <div class="contact">
+            <p>Contacts: dmerkylov@inbox.ru</p>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Даниил Меркулов, index.html, 2025. Все права защищены.</p>
+        </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    function showRecipe(num) {
+      let recipes = document.querySelectorAll(".recipe");
+      recipes.forEach(r => r.classList.remove("active"));
+      document.getElementById("recipe" + num).classList.add("active");
+    }
+  </script>
+  <script src="search.js"></script>
+</body>
+</html>

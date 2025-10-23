@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-header">
+        <div class="header">
+        <img id="mainImg" src="white.png" alt="Ночная картинка">
+            <div class="header-icons">
+                <a href="https://t.me/yami_kura">
+                <img id="tg" src="tg-white.svg" alt="">
+                </a>
+                <a href="https://vk.com/id/rarnoiti">
+                <img id="vk" src="vk-white.svg" alt="">
+                </a>
+                <a href="">
+                <img id="donate" src="donate-white.svg" alt="">
+                </a>
+                <a href="https://t.me/yami_kura">
+                <img id="support" src="" alt="">
+                </a>
+                <button id="themeBtn" class="theme-toggle" aria-pressed="false" title="Переключить тему">
+    <img id="icon" src="moon.svg" alt="">
+  </button>
+                <input id="inputS"></input>
+            </div>
+        </div>
+    </div>
+    <div class="container-body">
+        <div class="category">
+            <a href="zavtrak.html">Завтраки</a>
+            <a href="zakuski.html">Закуски</a>
+            <a href="napitki.html">Напитки</a>
+            <a href="ocnisnie.html">Основные блюда</a>      
+            <div class="return">
+            <a href="index.html">Главная страница</a>
+        </div>
+        </div>
+        <div class="body">
+        <div class="left-side">
+            <h1>Бульон</h1>
+            <ul class="menu-item">
+      <li><button class="swap" onclick="showRecipe(1)">Куриный бульон</button></a></li>
+      <li><button class="swap" onclick="showRecipe(2)">Овощной бульон</button></li>
+      <li><button class="swap" onclick="showRecipe(3)">Мясной бульон</button></li>
+      <li><button class="swap" onclick="showRecipe(4)">Рыбный бульон</button></li>
+      <li><button class="swap" onclick="showRecipe(5)">Грибной бульон</button></li>
+    </ul>
+        </div>
+        <div class="center-side">
+            <div id="recipe1" class="recipe active">
+    <h2>Рецепт 1: Куриный бульон</h2>
+    <img class="food" src="images/kyriniy.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>190</p><p>ккал</p></div>
+        <div><p>Белки</p><p>17</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>13</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>2</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Куриный суповой набор</span>
+  <span class="dots"></span>
+  <span class="amount">2 кг</span>
+</div>
+<div class="ingredient">
+  <span class="name">Репчатый лук</span>
+  <span class="dots"></span>
+  <span class="amount">1 головка</span>
+</div>
+<div class="ingredient">
+  <span class="name">Стебель сельдерея</span>
+  <span class="dots"></span>
+  <span class="amount">2 штуки</span>
+</div>
+<div class="ingredient">
+  <span class="name">Вода</span>
+  <span class="dots"></span>
+  <span class="amount">5 л</span>
+</div>
+<div class="ingredient">
+  <span class="name">Стебли укропа</span>
+  <span class="dots"></span>
+  <span class="amount">5 штук</span>
+</div>
+<div class="ingredient">
+  <span class="name">Стебли петрушки</span>
+  <span class="dots"></span>
+  <span class="amount">5 штук</span>
+</div>
+<div class="ingredient">
+  <span class="name">Лавровый лист</span>
+  <span class="dots"></span>
+  <span class="amount">1 штука</span>
+</div>
+<div class="ingredient">
+  <span class="name">Тимьян</span>
+  <span class="dots"></span>
+  <span class="amount">5 веточек</span>
+</div>
+<div class="ingredient">
+  <span class="name">Черный перец горошком</span>
+  <span class="dots"></span>
+  <span class="amount">5 штука</span>
+</div>
+<div class="ingredient">
+  <span class="name">Душистый перец горошком</span>
+  <span class="dots"></span>
+  <span class="amount">5 штука</span>
+</div>
+<div class="ingredient">
+  <span class="name">Соль</span>
+  <span class="dots"></span>
+  <span class="amount">по вкусу</span>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Куриные кости выложить на противень и отправить в духовку, разогретую до 240 градусов, на 20 минут.</p>
+    <p>2 В кастрюлю налить холодную воду, положить в нее подпеченные кости и довести до кипения.</p>        
+    <p>3 Когда вода закипит, убавить огонь и снять образовавшуюся пену. Варить бульон без крышки на небольшом огне 1 час.</p>
+    <p>4 Лук разрезать на половинки, не очищая его от шелухи.</p>
+    <p>5 Морковь и сельдерей также разрезать пополам.</p>
+    <p>6 Добавить в бульон лук, морковь, сельдерей, стебли петрушки и укропа, тимьян, душистый и черный перцы, лавровый лист. Варить без крышки также на небольшом огне 2–3 часа.</p>
+    <p>7 Если бульон дальше будет использоваться как самостоятельное блюдо, то его нужно досолить по вкусу в конце варки. Если же он будет выступать в роли ингредиента для других блюд, то солить его не стоит. Процедить готовый бульон через сито с марлей или полотенцем.</p>
+</div>
+    </div>
+    <div id="recipe2" class="recipe">
+    <h2>Рецепт 2: Овощной бульон</h2>
+    <img class="food" src="images/ovoj.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>143</p><p>ккал</p></div>
+        <div><p>Белки</p><p>7</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>1</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>30</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Морковь</span>
+  <span class="dots"></span>
+  <span class="amount">1 штука</span>
+</div>
+<div class="ingredient">
+  <span class="name">Репчатый лук</span>
+  <span class="dots"></span>
+  <span class="amount">1 штука</span>
+</div>
+<div class="ingredient">
+  <span class="name">Сельдерей</span>
+  <span class="dots"></span>
+  <span class="amount">2 стебля</span>
+</div>
+<div class="ingredient">
+  <span class="name">Петрушка</span>
+  <span class="dots"></span>
+  <span class="amount">1 пучок</span>
+</div>
+<div class="ingredient">
+  <span class="name">Черный перец горошком</span>
+  <span class="dots"></span>
+  <span class="amount">3 штуки</span>
+</div>
+<div class="ingredient">
+  <span class="name">Лавровый лист</span>
+  <span class="dots"></span>
+  <span class="amount">2 штуки</span>
+</div>
+<div class="ingredient">
+  <span class="name">Вода</span>
+  <span class="dots"></span>
+  <span class="amount">2 л</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Морковь очистить и нарезать произвольно.</p>
+    <p>2 Снять с луковицы верхний слой шелухи, можно оставить немного шелухи по желанию для приданию бульону золотистого цвета.</p>  
+    <p>3 Стебель нарезать.</p>  
+    <p>4 Петрушку промыть.</p>  
+    <p>5 Сложить в кастрюлю все ингредиенты.</p>  
+    <p>6 Добавить лавровый лист и перец горошком.</p>  
+    <p>7 Залить водой.</p>  
+    <p>8 Довести до кипения, уменьшить огонь и варить 30 минут.</p>  
+    <p>9 Процедить.</p>  
+    <p>10 Использовать как основу для первых и вторых блюд.</p>  
+    </div>    
+  <div id="recipe3" class="recipe">
+    <h2>Рецепт 3: Мясной бульон</h2>
+    <img class="food" src="images/mysnoy.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>279</p><p>ккал</p></div>
+        <div><p>Белки</p><p>25</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>16</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>10</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Говядина</span>
+  <span class="dots"></span>
+  <span class="amount">500 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Репчатый лук</span>
+  <span class="dots"></span>
+  <span class="amount">60 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Морковь</span>
+  <span class="dots"></span>
+  <span class="amount">60 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Сахар</span>
+  <span class="dots"></span>
+  <span class="amount">20 г</span>
+</div><div class="ingredient">
+  <span class="name">Корень петрушки</span>
+  <span class="dots"></span>
+  <span class="amount">2 штуки</span>
+</div><div class="ingredient">
+  <span class="name">Соль</span>
+  <span class="dots"></span>
+  <span class="amount">по вкусу</span>
+</div>
+<div class="ingredient">
+  <span class="name">Белый перец горошком</span>
+  <span class="dots"></span>
+  <span class="amount">3 г</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Промытое, очищенное от жил и пленки мясо разрубить на куски и залить в кастрюле холодной водой.</p>
+    <p>2 Довести до кипения, после чего варить на медленном огне 2,5 часа. Периодически снимать пену.</p>
+    <p>3 Коренья, порезанную пластинками морковь, положить в бульон за полчаса до окончания варки.</p>
+    <p>4 Порезанный кольцами лук и черный перец положить в бульон за 10 минут до окончания варки.</p>
+    <p>5 Посолить за 5 минут до окончания варки.</p>
+  </div>
+  <div id="recipe4" class="recipe">
+    <h2>Рецепт 4: Рыбный бульон</h2>
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>253</p><p>ккал</p></div>
+        <div><p>Белки</p><p>42</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>2</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>15</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Репчатый лук</span>
+  <span class="dots"></span>
+  <span class="amount">2 головки</span>
+</div>
+<div class="ingredient">
+  <span class="name">Рыбные обрезки</span>
+  <span class="dots"></span>
+  <span class="amount">450 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Степные петрушки</span>
+  <span class="dots"></span>
+  <span class="amount">12 штук</span>
+</div>
+<div class="ingredient">
+  <span class="name">Лимонный сок</span>
+  <span class="dots"></span>
+  <span class="amount">2 столовые ложки</span>
+</div>
+<div class="ingredient">
+  <span class="name">Соль</span>
+  <span class="dots"></span>
+  <span class="amount">1/2 чайные ложки</span>
+</div>
+<div class="ingredient">
+  <span class="name">Белое сухое вино</span>
+  <span class="dots"></span>
+  <span class="amount">50 мл</span>
+</div>
+<div class="ingredient">
+  <span class="name">Сливочное масло</span>
+  <span class="dots"></span>
+  <span class="amount">по вкусу</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Порубить острым ножом рыбные кости и все обрезки, сложить в смазанный сливочным маслом сотейник вместе с измельченным луком и петрушкой, добавить лимонный сок, соль, накрыть крышкой и потушить на среднем огне пять минут. Затем влить 800 мл воды и вино, довести до кипения и варить двадцать минут.</p>
+    <p>2 Готовый бульон процедить.</p>
+  </div>
+  <div id="recipe5" class="recipe">
+    <h2>Рецепт 5: Грибной бульон</h2>
+    <img class="food" src="images/gribnoy.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>45</p><p>ккал</p></div>
+        <div><p>Белки</p><p>3</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>1</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>7</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Сушенные белые грибы</span>
+  <span class="dots"></span>
+  <span class="amount">15 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Шампиньоны</span>
+  <span class="dots"></span>
+  <span class="amount">400 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Морковь</span>
+  <span class="dots"></span>
+  <span class="amount">2 штуки</span>
+</div>
+<div class="ingredient">
+  <span class="name">Репчатый лук</span>
+  <span class="dots"></span>
+  <span class="amount">2 головки</span>
+</div>
+<div class="ingredient">
+  <span class="name">Стебель сельдерея</span>
+  <span class="dots"></span>
+  <span class="amount">2 штуки</span>
+</div>
+<div class="ingredient">
+  <span class="name">Зеленая часть лука-порея</span>
+  <span class="dots"></span>
+  <span class="amount">1 штука</span>
+</div>
+<div class="ingredient">
+  <span class="name">Тимьян</span>
+  <span class="dots"></span>
+  <span class="amount">3 веточки</span>
+</div>
+<div class="ingredient">
+  <span class="name">Петрушка</span>
+  <span class="dots"></span>
+  <span class="amount">3 веточки</span>
+</div>
+<div class="ingredient">
+  <span class="name">Укроп</span>
+  <span class="dots"></span>
+  <span class="amount">3 веточки</span>
+</div>
+<div class="ingredient">
+  <span class="name">Лавровый лист</span>
+  <span class="dots"></span>
+  <span class="amount">2 штуки</span>
+</div>
+<div class="ingredient">
+  <span class="name">Душистый перец горошком</span>
+  <span class="dots"></span>
+  <span class="amount">5 штук</span>
+</div>
+<div class="ingredient">
+  <span class="name">Черный перец горошком</span>
+  <span class="dots"></span>
+  <span class="amount">5 штук</span>
+</div>
+<div class="ingredient">
+  <span class="name">Чеснок</span>
+  <span class="dots"></span>
+  <span class="amount">3 зубчика</span>
+</div>
+<div class="ingredient">
+  <span class="name">Вода</span>
+  <span class="dots"></span>
+  <span class="amount">3 л</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Сушеные белые грибы замочить в холодной воде и оставить на 15 минут. Это нужно для того, чтобы избавиться от песка. Спустя 15 минут воду слить, а грибы промыть.</p>
+    <p>2 Подготовить овощи. Морковь вымыть и нарезать крупными кусочками.</p>
+    <p>3 Стебли сельдерея нарезать такими же кусочками. </p>
+    <p>4 Лук, не очищая, разрезать пополам.</p>
+    <p>5 Шампиньоны, если они крупные, разрезать пополам или четвертинками.</p>
+    <p>6 Сложить все подготовленные овощи и грибы в кастрюлю, добавить зеленую часть порея, тимьян, петрушку, укроп, целые зубчики чеснока, лавровый лист, черный и душистый перец.</p>
+    <p>7 Залить водой и поставить на сильный огонь. Довести до кипения, затем убавить огонь и варить 30–40 минут.</p>
+    <p>8 Готовый бульон процедить через мелкое сито.</p>
+
+  </div>
+        </div>
+        <div class="right-side">
+                <img id="reklamaImg2" src="sddefault.jpg" alt="">
+        </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+        <div class="information">
+        <p><a href="https://t.me/yami_kura">Telegram</a></p>
+        <p><a href="https://vk.com/id/rarnoiti">VK</a></p>
+        </div>
+        <div class="contact">
+            <p>Contacts: dmerkylov@inbox.ru</p>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Даниил Меркулов, index.html, 2025. Все права защищены.</p>
+        </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    function showRecipe(num) {
+      let recipes = document.querySelectorAll(".recipe");
+      recipes.forEach(r => r.classList.remove("active"));
+      document.getElementById("recipe" + num).classList.add("active");
+    }
+  </script>
+  <script src="search.js"></script>
+</body>
+</html>

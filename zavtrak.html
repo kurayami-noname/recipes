@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-header">
+        <div class="header">
+        <img id="mainImg" src="white.png" alt="Ночная картинка">
+            <div class="header-icons">
+                <a href="https://t.me/yami_kura">
+                <img id="tg" src="tg-white.svg" alt="">
+                </a>
+                <a href="https://vk.com/id/rarnoiti">
+                <img id="vk" src="vk-white.svg" alt="">
+                </a>
+                <a href="">
+                <img id="donate" src="donate-white.svg" alt="">
+                </a>
+                <a href="https://t.me/yami_kura">
+                <img id="support" src="" alt="">
+                </a>
+                <button id="themeBtn" class="theme-toggle" aria-pressed="false" title="Переключить тему">
+    <img id="icon" src="moon.svg" alt="">
+  </button>
+                <input id="inputS"></input>
+            </div>
+        </div>
+    </div>
+    <div class="container-body">
+        <div class="category">
+            <a href="obed.html">Обед</a>
+            <a href="zakuski.html">Закуски</a>
+            <a href="napitki.html">Напитки</a>
+            <a href="ocnisnie.html">Основные блюда</a>
+            <div class="return">
+            <a href="index.html">Главная страница</a>
+        </div>
+        </div>
+        <div class="body">
+        <div class="left-side">
+            <h1>Завтрак</h1>
+    <ul class="menu-item">
+      <li><button class="swap" onclick="showRecipe(1)">Омлет</button></a></li>
+      <li><button class="swap" onclick="showRecipe(2)">Яичница</button></li>
+      <li><button class="swap" onclick="showRecipe(3)">Сырники</button></li>
+      <li><button class="swap" onclick="showRecipe(4)">Рисовая каша</button></li>
+      <li><button class="swap" onclick="showRecipe(5)">Овсяная каша</button></li>
+    </ul>
+        </div>
+        <div class="center-side">
+<div id="recipe1" class="recipe active">
+    <h2>Рецепт 1: Омлет</h2>
+    <img class="food" src="images/omlet.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>949</p><p>ккал</p></div>
+        <div><p>Белки</p><p>29</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>76</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>36</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Сливочное масло</span>
+  <span class="dots"></span>
+  <span class="amount">50 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Белый лук</span>
+  <span class="dots"></span>
+  <span class="amount">1 головка</span>
+</div>
+<div class="ingredient">
+  <span class="name">Сахар</span>
+  <span class="dots"></span>
+  <span class="amount">1 столовая ложка</span>
+</div>
+<div class="ingredient">
+  <span class="name">Куринное яйцо</span>
+  <span class="dots"></span>
+  <span class="amount">3 штуки</span>
+</div>
+<div class="ingredient">
+  <span class="name">Сливки</span>
+  <span class="dots"></span>
+  <span class="amount">150 мл</span>
+</div>
+<div class="ingredient">
+  <span class="name">Мускатный орех</span>
+  <span class="dots"></span>
+  <span class="amount">по вкусу</span>
+</div>
+<div class="ingredient">
+  <span class="name">Соль</span>
+  <span class="dots"></span>
+  <span class="amount">по вкусу</span>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Растопить на сковороде 35 грамм масла, бросить в нее мелко порезанный лук, столовую ложку сахара и щепотку соли. Залить водой — так, чтобы она покрыла лук, и оставить на сильном огне. Когда вода выкипит и лук станет слегка подгорать, спрыснуть его еще водой и быстро перемешать, чтобы образовавшаяся карамель равномерно покрыла все кусочки.</p>
+    <p>2 Яйца разбить в миску. Добавить щепотку мускатного ореха, щепотку соли, треть сливок и слегка перемешать.</p>        
+    <p>3 Оставшиеся сливки вылить в сотейник, поставить его на огонь, добавить немного мускатного ореха и оставить кипеть, пока сливки не загустеют. В конце ­добавить щепотку мелко порезанного зеленого лука, посолить по вкусу и перемешать.</p>
+    <p>4 Оставшееся масло растопить на сковороде. Вылить в него яйца и, помешивая, жарить их до такого состояния, чтобы нижняя часть омлета поджарилась, а сверху он остался жидковатым. В середину положить карамелизованный лук, загнуть два противоположных края омлета, сформировав конверт. Конверт выложить на тарелку, сверху полить сливочным соусом.</p>
+</div>
+    </div>
+    <div id="recipe2" class="recipe">
+    <h2>Рецепт 2: Яичница-глазунья</h2>
+    <img class="food" src="images/yaicha.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>88</p><p>ккал</p></div>
+        <div><p>Белки</p><p>4</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>8</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>0</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Куриное яйцо</span>
+  <span class="dots"></span>
+  <span class="amount">1 штука</span>
+</div>
+<div class="ingredient">
+  <span class="name">Соль</span>
+  <span class="dots"></span>
+  <span class="amount">по вкусу</span>
+</div>
+<div class="ingredient">
+  <span class="name">Растительное масло</span>
+  <span class="dots"></span>
+  <span class="amount">1 столовая ложка</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 На сковороде разогреть масло, выпустить яйца, стараясь не разорвать оболочки желтков, посолить, подержать сковороду 1–2 минуты на плите, а затем поставить на 3–4 минуты в горячий духовой шкаф.</p>
+    <p>2 Как только белок примет молочно-белый цвет, яичницу надо подать на той же сковороде или на подогретой тарелке.</p>    
+    </div>    
+  <div id="recipe3" class="recipe">
+    <h2>Рецепт 3: Сырники</h2>
+    <img class="food" src="images/sirniki.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>516</p><p>ккал</p></div>
+        <div><p>Белки</p><p>27</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>21</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>55</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Творог</span>
+  <span class="dots"></span>
+  <span class="amount">500 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Сахар</span>
+  <span class="dots"></span>
+  <span class="amount">100 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Куриное яйцо</span>
+  <span class="dots"></span>
+  <span class="amount">1 штука</span>
+</div>
+<div class="ingredient">
+  <span class="name">Пшеничная мука</span>
+  <span class="dots"></span>
+  <span class="amount">150 г</span>
+</div><div class="ingredient">
+  <span class="name">Растительное масло</span>
+  <span class="dots"></span>
+  <span class="amount">50 мл</span>
+</div><div class="ingredient">
+  <span class="name">Ванилин</span>
+  <span class="dots"></span>
+  <span class="amount">1 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Сметана</span>
+  <span class="dots"></span>
+  <span class="amount">по вкусу</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Подготовить все ингредиенты. Творог нужно брать обязательно сухой и рассыпчатый, из мягкого не получится. Чем выше процент жирности, тем вкуснее будут сырники.</p>
+    <p>2 Размять творог вилкой.</p>
+    <p>3 Смешать с яйцом, сахаром и ванилином.</p>
+    <p>4 Затем добавить 90 г муки и перемешать.</p>
+    <p>5 Сырная масса не должна быть ни слишком сухой, ни слишком влажной. Смоченными в воде руками взять немного массы и скатать из нее шарик, затем сдавить шарик ладонями и придать сырнику плоскую форму.</p>
+    <p>6 Обвалять сформованные сырники в муке.</p>
+    <p>7 На сковороде разогреть масло и на среднем огне обжарить сырники сначала с одной стороны до золотистой корочки.</p>
+    <p>8 Затем перевернуть и так же обжарить до золотистой корочки.</p>
+    <p>9 Готовые сырники выложить на бумажные полотенца, чтобы избавиться от лишнего жира.</p>
+  </div>
+  <div id="recipe4" class="recipe">
+    <h2>Рецепт 4: Рисовая каша</h2>
+    <img class="food" src="images/ris.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>278</p><p>ккал</p></div>
+        <div><p>Белки</p><p>6</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>11</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>40</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Рис</span>
+  <span class="dots"></span>
+  <span class="amount">1 штука</span>
+</div>
+<div class="ingredient">
+  <span class="name">Вода</span>
+  <span class="dots"></span>
+  <span class="amount">650 мл</span>
+</div>
+<div class="ingredient">
+  <span class="name">Молоко</span>
+  <span class="dots"></span>
+  <span class="amount">600 мл</span>
+</div>
+<div class="ingredient">
+  <span class="name">Сахар</span>
+  <span class="dots"></span>
+  <span class="amount">30 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Сливочное масло</span>
+  <span class="dots"></span>
+  <span class="amount">50 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Соль</span>
+  <span class="dots"></span>
+  <span class="amount">по вкусу</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Подготовить необходимые ингредиенты.</p>
+    <p>2 В кастрюлю налить воду </p>
+    <p>3 Добавить промытый рис.</p>
+    <p>4 Варить на небольшом огне 15 минут, периодически помешивая, чтобы рис не пригорел ко дну.</p>
+    <p>5 Параллельно в отдельной кастрюле подогреть молоко, не доводя до кипения.</p>
+    <p>6 Влить молоко к полуготовому рису.</p>
+    <p>7 Добавить сахар и соль. Варить еще 10–15 минут, помешивая, пока рис не станет полностью мягким.</p>
+    <p>8 В конце варки добавить в кашу сливочное масло.</p>
+    <p>9 Хорошо перемешать.</p>
+    <p>10 Подавать с кусочком масла в тарелке.</p>
+  </div>
+  <div id="recipe5" class="recipe">
+    <h2>Рецепт 5: Овсяная каша</h2>
+    <img class="food" src="images/ovsiyan.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>504</p><p>ккал</p></div>
+        <div><p>Белки</p><p>12</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>15</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>82</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Овсяные отруби</span>
+  <span class="dots"></span>
+  <span class="amount">1 стакан</span>
+</div>
+<div class="ingredient">
+  <span class="name">Бананы</span>
+  <span class="dots"></span>
+  <span class="amount">1 штука</span>
+</div>
+<div class="ingredient">
+  <span class="name">Яблоко</span>
+  <span class="dots"></span>
+  <span class="amount">1 штука</span>
+</div>
+<div class="ingredient">
+  <span class="name">Вода</span>
+  <span class="dots"></span>
+  <span class="amount">450 мл</span>
+</div>
+<div class="ingredient">
+  <span class="name">Сливочное масло</span>
+  <span class="dots"></span>
+  <span class="amount">1 чайная ложка</span>
+</div>
+<div class="ingredient">
+  <span class="name">Мед</span>
+  <span class="dots"></span>
+  <span class="amount">1 чайная ложка</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Овсяные отруби насыпаем в кастрюлю, заливаем водой, сверху кладем сливочное масло. Ставим на плитку, на умеренный огонь. Во время приготовления кашу нужно помешивать. Как только хлопья впитают в себя всю воду, снимаем с огня.</p>
+    <p>2 Режем половинку яблока и банана на формы которые вам нравятся.</p>
+    <p>3 Когда овсяная каша готова, перекладываем в тарелку и украшаем фруктами поливая сверху мёдом.</p>
+
+  </div>
+  </div>
+        <div class="right-side">
+                <img id="reklamaImg2" src="sddefault.jpg" alt="">
+        </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+        <div class="information">
+        <p><a href="https://t.me/yami_kura">Telegram</a></p>
+        <p><a href="https://vk.com/id/rarnoiti">VK</a></p>
+        </div>
+        <div class="contact">
+            <p>Contacts: dmerkylov@inbox.ru</p>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Даниил Меркулов, index.html, 2025. Все права защищены.</p>
+        </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    function showRecipe(num) {
+      let recipes = document.querySelectorAll(".recipe");
+      recipes.forEach(r => r.classList.remove("active"));
+      document.getElementById("recipe" + num).classList.add("active");
+    }
+  </script>
+  <script src="search.js"></script>
+</body>
+</html>

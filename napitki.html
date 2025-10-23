@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-header">
+        <div class="header">
+        <img id="mainImg" src="white.png" alt="Ночная картинка">
+            <div class="header-icons">
+                <a href="https://t.me/yami_kura">
+                <img id="tg" src="tg-white.svg" alt="">
+                </a>
+                <a href="https://vk.com/id/rarnoiti">
+                <img id="vk" src="vk-white.svg" alt="">
+                </a>
+                <a href="">
+                <img id="donate" src="donate-white.svg" alt="">
+                </a>
+                <a href="https://t.me/yami_kura">
+                <img id="support" src="" alt="">
+                </a>
+                <button id="themeBtn" class="theme-toggle" aria-pressed="false" title="Переключить тему">
+    <img id="icon" src="moon.svg" alt="">
+  </button>
+                <input id="inputS"></input>
+            </div>
+        </div>
+    </div>
+    <div class="container-body">
+        <div class="category">
+            <a href="zavtrak.html">Завтраки</a>
+            <a href="obed.html">Обед</a>
+            <a href="zakuski.html">Закуски</a>
+            <a href="ocnisnie.html">Основные блюда</a>
+            <div class="return">
+            <a href="index.html">Главная страница</a>
+        </div>
+        </div>
+        <div class="body">
+        <div class="left-side">
+            <h1>Напитки</h1>
+    <ul class="menu-item">
+      <li><button class="swap" onclick="showRecipe(1)">Кофе</button></a></li>
+      <li><button class="swap" onclick="showRecipe(2)">Чай</button></li>
+      <li><button class="swap" onclick="showRecipe(3)">Горячий шоколад</button></li>
+      <li><button class="swap" onclick="showRecipe(4)">Банановый смузи</button></li>
+      <li><button class="swap" onclick="showRecipe(5)">Какао</button></li>
+    </ul>
+        </div>
+        <div class="center-side">
+            <div id="recipe1" class="recipe active">
+    <h2>Рецепт 1: Раф кофе</h2>
+    <img class="food" src="images/raf.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>183</p><p>ккал</p></div>
+        <div><p>Белки</p><p>3</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>10</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>20</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Экспрессо</span>
+  <span class="dots"></span>
+  <span class="amount">50 мл</span>
+</div>
+<div class="ingredient">
+  <span class="name">Ванильный сахар</span>
+  <span class="dots"></span>
+  <span class="amount">2 чайных ложек</span>
+</div>
+<div class="ingredient">
+  <span class="name">Сливки 10%-ные</span>
+  <span class="dots"></span>
+  <span class="amount">10 мл</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Во-первых, приготовьте порцию эспрессо. Это можно сделать, как при помощи кофемашины, так и по-старинке, используя турку (позаботьтесь, чтобы это был более крепкий, чем обычно, кофе).</p>
+    <p>2 Затем хорошенько подогрейте сливки. Это можно сделать и в микроволновке (при мощности 800 в течение 1,5-2 минут). Это нужно в том случае, если Вы любите кофе горячий.</p>
+    <p>3 Смешайте сливки с кофе и добавьте к ним ½ чайной ложки ванильного сахара (или ванили + сахар). При использовании ванилина важно не переборщить, иначе напиток будет горчить. Ванильный вкус должен быть ярко выраженным и не более того.</p>
+    <p>4 Далее, интенсивно взбейте смесь кофе+сахар+сливки, используя венчик или блендер для коктейлей, или капучинатор. Та-дам!!! Все simpler-просто: Раф кофе готов</p>
+  </div>
+  <div id="recipe2" class="recipe">
+    <h2>Рецепт 2: Чай с тимьяном и клубникой</h2>
+    <img class="food" src="images/tea.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>19</p><p>ккал</p></div>
+        <div><p>Белки</p><p>2</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>1</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>2</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Тимьян</span>
+  <span class="dots"></span>
+  <span class="amount">10 г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Клубника</span>
+  <span class="dots"></span>
+  <span class="amount">50   г</span>
+</div>
+<div class="ingredient">
+  <span class="name">Черный листовый чай</span>
+  <span class="dots"></span>
+  <span class="amount">30 г</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Тимьян мы добавляем не к заварке, а в пространство для воды в чайнике. Можно добавить чебрец, если есть. Хорошо подходят туда и ягоды, можно даже замороженые. Мы, например, кладем клубнику.</p>
+    <p>2 Подавать с медом и печеньками.</p>
+  </div>
+
+  <div id="recipe3" class="recipe">
+    <h2>Рецепт 3: Горячий шоколад</h2>
+    <img class="food" src="images/chocolate.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>246</p><p>ккал</p></div>
+        <div><p>Белки</p><p>6</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>15</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>21</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Молоко</span>
+  <span class="dots"></span>
+  <span class="amount">500 мл</span>
+</div>
+<div class="ingredient">
+  <span class="name">Кукурузная мука</span>
+  <span class="dots"></span>
+  <span class="amount">1 чайная ложка</span>
+</div>
+<div class="ingredient">
+  <span class="name">Черный шоколад 70%-ный</span>
+  <span class="dots"></span>
+  <span class="amount">120 г</span>
+</div>
+ <div class="ingredient">
+  <span class="name">Сахар</span>
+  <span class="dots"></span>
+  <span class="amount">по вкусу</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Подогреть молоко на среднем огне до робкого кипения, сделать огонь совсем минимальным и всыпать в кастрюльку с молоком наломанный маленькими кусочками шоколад (шоколад перед этим лучше на пару часов положить в морозилку: после холода он дает более тонкий вкус). Помешивая содержимое кастрюльки, довести напиток до однородного состояния и робкого, с побулькиванием кипения.</p>
+    <p>2 Добавить сахару и загустить кукурузной мукой. Чтобы она не сбивалась в комки, нелишне предварительно капнуть в столовую ложку с мукой немного горячей жидкости, превратить содержимое ложки в кашицу и уже потом при помощи этой кашицы загущать остальной шоколад.</p>
+    <p>3 Разлить готовый шоколад по чашкам и немедленно подавать.</p>
+  </div>
+
+  <div id="recipe4" class="recipe">
+    <h2>Рецепт 4: Банановый смузи</h2>
+    <img class="food" src="images/banana.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>315</p><p>ккал</p></div>
+        <div><p>Белки</p><p>15</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>1</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>63</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Сок из красных апельсинов</span>
+  <span class="dots"></span>
+  <span class="amount">100 мл</span>
+</div>
+<div class="ingredient">
+  <span class="name">Бананы</span>
+  <span class="dots"></span>
+  <span class="amount">1 штука</span>
+</div>
+<div class="ingredient">
+  <span class="name">Обезжиренный йогурт</span>
+  <span class="dots"></span>
+  <span class="amount">100 мл</span>
+</div>
+ <div class="ingredient">
+  <span class="name">Черника</span>
+  <span class="dots"></span>
+  <span class="amount">100 г</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 В блендере смешать все ингредиенты до однородного состояния.</p>
+  </div>
+
+  <div id="recipe5" class="recipe">
+    <h2>Рецепт 5: Какао</h2>
+    <img class="food" src="images/cacao.png" alt="">
+    <h3>Энергетическая ценность на порцию</h3>
+    <div class="energy">
+        <div><p>Калорийность</p><p>192</p><p>ккал</p></div>
+        <div><p>Белки</p><p>7</p><p>грамм</p></div>
+        <div><p>Жиры</p><p>7</p><p>грамм</p></div>
+        <div><p>Углеводы</p><p>26</p><p>грамм</p></div>
+    </div>
+    <div class="ingredients">
+        <h3>Ингредиенты</h3>
+        <div class="ingredient">
+  <span class="name">Какао-порошок</span>
+  <span class="dots"></span>
+  <span class="amount">7 чайных ложек</span>
+</div>
+<div class="ingredient">
+  <span class="name">Вода</span>
+  <span class="dots"></span>
+  <span class="amount">1 стакан</span>
+</div>
+<div class="ingredient">
+  <span class="name">Молоко</span>
+  <span class="dots"></span>
+  <span class="amount">3 стакана</span>
+</div>
+ <div class="ingredient">
+  <span class="name">Сахар</span>
+  <span class="dots"></span>
+  <span class="amount">8 чайных ложек</span>
+</div>
+</div>
+<h3>Инструкция приготовления</h3>
+    <p>1 Смешать какао-порошок и сахар в стакане, залить горячей водой и тщательно перемешать.</p>
+    <p>2 Вылить получившееся в кастрюлю и добавить молоко.</p>
+    <p>3 Довести до кипения.</p>
+  </div>
+  
+        </div>
+        <div class="right-side">
+                <img id="reklamaImg2" src="sddefault.jpg" alt="">
+        </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+        <div class="information">
+        <p><a href="https://t.me/yami_kura">Telegram</a></p>
+        <p><a href="https://vk.com/id/rarnoiti">VK</a></p>
+        </div>
+        <div class="contact">
+            <p>Contacts: dmerkylov@inbox.ru</p>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Даниил Меркулов, index.html, 2025. Все права защищены.</p>
+        </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    function showRecipe(num) {
+      let recipes = document.querySelectorAll(".recipe");
+      recipes.forEach(r => r.classList.remove("active"));
+      document.getElementById("recipe" + num).classList.add("active");
+    }
+  </script>
+  <script src="search.js"></script>
+</body>
+</html>
